@@ -1,0 +1,172 @@
+{% extends 'base.html' %}
+{% block title %}Homepage{% endblock title %}
+
+{% block content %}
+<!-- Main Contents Section -->
+    <main>
+      <!-- Introduction Section -->
+      <div
+        class="bg-body-tertiary d-md-flex justify-content-around me-auto p-5 text-md-left"
+      >
+        <img
+          src="assets/bds.jpg"
+          style="width: 300px; height: 300px"
+          alt="brand CEO"
+        />
+        <div class="hero-text p-4">
+          <p class="m-auto">Hello There, I am</p>
+          <h3 class="fw-bolder display-3 text-md-center">
+            Miftaudeen Folorunso
+          </h3>
+          <p>
+            the sole proprietor behind Biodun's Decor, a company that enhances
+            homes and workspaces, through the art of interior decoation.
+          </p>
+        </div>
+      </div>
+
+      <!-- Services offered -->
+      <div
+        class="container-fluid text-center bg-primary-subtle p-3"
+        id="sevices"
+      >
+        <h2 class="fw-bolder display-5">Services</h2>
+
+        <div class="d-flex flex-md-row flex-wrap justify-content-evenly">
+          <!-- <div class="card m-2" style="width: 20rem">
+            <img
+              src="assets/images.jpeg"
+              alt="painting"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h2 class="card-title">Painting</h2>
+              <p class="card-text">
+                Professional painting services with top notch tools and
+                materials.
+              </p>
+            </div>
+          </div> -->
+
+          <div class="card m-2" style="width: 20rem">
+            <img
+              src="assets/paint-prod.jpeg"
+              alt="paints"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h2 class="card-title">Painting Services & Production</h2>
+              <p class="card-text">
+                Use of top notch materials in paint production and painting
+                services to ensure quality and long lasting paint.
+              </p>
+            </div>
+          </div>
+
+          <div class="card m-2" style="width: 20rem">
+            <img
+              src="assets/wallpaper.jpeg"
+              alt="wallpaper"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h2 class="card-title">Wallpaper Installation</h2>
+              <p class="card-text">
+                Installation of beautiful wallpapers, static and 3D wallpapers,
+                including 3D panels.
+              </p>
+            </div>
+          </div>
+
+          <div class="card m-2" style="width: 20rem">
+            <img
+              src="assets/window-blind.jpeg"
+              alt="window blind"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h2 class="card-title">Window Blind Installation</h2>
+              <p class="card-text">
+                Window blinds of different designs, all at affordable price and
+                of top quality.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About, Contact and location section -->
+      <div class="container-fluid p-4 bg-light">
+        <!-- About Us Section -->
+        <div class="bg-primary p-3 m-2 text-light text-center" id="about">
+          <h2 class="fw-bolder text-semibold m-auto">About Us</h2>
+          <hr />
+          <p>
+            We are a company that enhances homes and workspaces, through the art
+            of interior decoration. Our area of expertise mainly focuses on: the
+            production of paints professional painting services installation of
+            3D panels installation of wall murals installation of window blinds
+            installation of wall frames and many more. For your individual or
+            company needs, contact us with the links below.
+          </p>
+        </div>
+
+        <!-- Contact Us and Location Section-->
+        <div
+          class="container-fluid d-flex flex-wrap justify-content-evenly p-3"
+          id="contact"
+        >
+          <!-- Location -->
+          <div class="bg-primary p-3 text-center text-light m-1">
+            <h3 class="fw-bolder text-semibold m-auto">Location</h3>
+            <hr />
+            <address>Ayepe, Moro, Ile-Ife, Osun State, Nigeria.</address>
+          </div>
+          <div class="bg-primary p-3 text-center text-light m-1">
+            <h2 class="fw-bolder text-semibold m-auto">Contact Us</h2>
+            <hr />
+            <div
+              class="d-flex flex-row flex-wrap justify-content-evenly m-auto"
+            >
+              <a
+                href="https://www.facebook.com/Biodunsdecor26"
+                class="text-light nav-link m-2"
+                ><i class="fa-brands fa-facebook p-1"></i>
+              </a>
+              <!-- Facebook -->
+              <a
+                href="https://www.instagram.com/biodunsdecor26?igsh=MTNoaXFrajNremRwdw=="
+                class="text-light nav-link m-2"
+                ><i class="fa-brands fa-instagram p-1"></i>
+              </a>
+              <!-- Instagram -->
+              <a
+                href="https://www.tiktok.com/@biodunsdecor26?_t=ZM-8x8TRzealhI&_r=1"
+                class="text-light nav-link m-2"
+                ><i class="fa-brands fa-tiktok p-1"></i>
+              </a>
+              <!-- TikTok -->
+              <a href="https://wa.link/yez0i6" class="text-light nav-link m-2"
+                ><i class="fa-brands fa-whatsapp p-1"></i>
+              </a>
+              <!-- Whatsapp -->
+              <a
+                href="mailto:miftaudeenabiodun@gmail.com"
+                class="text-light nav-link m-2"
+                ><i class="fa-solid fa-envelope p-1"></i>
+              </a>
+              <!-- Email -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- End Of Main Contents -->
+
+{% endblock content %}
+
+    
+    
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <form action="POST">
+        {{ form.as_div }}
+        <button type="submit">Add Project</button>
+    </form>
+{% endblock content %}
