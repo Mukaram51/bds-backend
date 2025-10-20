@@ -3,15 +3,19 @@
 {% block content %}
 <div class="container">
 
-    <form action="POST">
+    <form action="{% url 'new_project' %}" class="" method="POST">
         {% csrf_token %}
         <label for="name">Name: </label><br>
         {{ form.name }}
         <br><br>
         <label for="description">Description: </label><br>
         {{ form.description }}
-        <br><br>
+        <br>
+        <label for="Status">Status: </label>
+        {{ form.is_completed }}
+        <br>
         <button type="submit">Add Project</button>
     </form>
 </div>
+
 {% endblock content %}

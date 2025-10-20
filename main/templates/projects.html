@@ -2,15 +2,23 @@
 {% block title %}Projects{% endblock title %}
 
 {% block content %}
-<a href="{% url 'new_project' %}" class="btn btn-primary">Add new project</a>
-    {% for project in projects %}
-        <div class="p-3">
-            <img src="" alt="thumbnail">
-            <div class="p-1">
-                <h3>{{ project.name }}</h3>
-                <p>{{ project.description }}</p>
+<div class="container p-3">
+
+    <a href="{% url 'new_project' %}" class="btn btn-primary float-end">Add new project</a>
+        {% for project in projects %}
+            <div class="p-3">
+                <img src="" alt="thumbnail">
+                <div class="p-1">
+                    <h3>{{ project.name }}</h3>
+                    <p>{{ project.description }}</p>
+                    {% if project.is_completed %}
+                        <h6>Completed</h6>
+                    {% else %}
+                        <h6>In Progress</h6>
+                    {% endif %}
+                </div>
             </div>
-        </div>
-    {% endfor %}
+        {% endfor %}
+</div>
     
 {% endblock %}
