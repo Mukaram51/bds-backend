@@ -2,7 +2,7 @@
 {% block title %}Projects{% endblock title %}
 
 {% block content %}
-
+<a href="{% url 'new_project' %}" class="btn btn-primary">Add new project</a>
     {% for project in projects %}
         <div class="p-3">
             <img src="" alt="thumbnail">
