@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block title %}Homepage{% endblock title %}
 
 {% block content %}
@@ -9,7 +10,7 @@
         class="bg-body-tertiary d-md-flex justify-content-around me-auto p-5 text-md-left"
       >
         <img
-          src="assets/bds.jpg"
+          src="{% static 'media/bds.jpg' %}"
           style="width: 300px; height: 300px"
           alt="brand CEO"
         />
@@ -50,7 +51,7 @@
 
           <div class="card m-2" style="width: 20rem">
             <img
-              src="assets/paint-prod.jpeg"
+              src="{% static "media/paint-prod.jpeg" %}"
               alt="paints"
               class="card-img-top"
             />
@@ -65,7 +66,7 @@
 
           <div class="card m-2" style="width: 20rem">
             <img
-              src="assets/wallpaper.jpeg"
+              src="{% static "media/wallpaper.jpeg" %}"
               alt="wallpaper"
               class="card-img-top"
             />
@@ -80,7 +81,7 @@
 
           <div class="card m-2" style="width: 20rem">
             <img
-              src="assets/window-blind.jpeg"
+              src="{% static "media/window-blind.jpeg" %}"
               alt="window blind"
               class="card-img-top"
             />

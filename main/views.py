@@ -10,7 +10,7 @@ def projects(request):
     projects = Project.objects.order_by('-id')
     return render(request, 'projects.html', {'projects': projects})
 
-# TODO: ADD PROJECT ENDPOINT
+# TODO: NEW PROJECT ENDPOINT
 def new_project(request):
     
     if request.method == 'POST':
@@ -27,3 +27,18 @@ def new_project(request):
 
 
 # TODO: EDIT PROJECT ENDPOINT
+# def edit_project(request, project_id):
+    
+#     project = Project.objects.get(id=project_id)
+
+#     if request.method == 'POST':
+#         form = ProjectForm(instance=project,data=request.POST)
+
+#         if form.is_valid():
+#             form.save()
+#             return redirect('projects')
+        
+#     else:
+#         form = ProjectForm(instance=project)
+
+#     return render(request, 'edit_project.html', {'form':form})

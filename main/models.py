@@ -5,7 +5,7 @@ class Project(models.Model):
     name = models.CharField(verbose_name="Project Name")
     description = models.TextField()
     is_completed = models.BooleanField(verbose_name='Work Progress', default=False)
-    # images = models.ImageField()
+    images = models.ImageField()
     # location = models.TextField()
     # author = models.ForeignKey(User, on_delete=models.CASCADE)
 

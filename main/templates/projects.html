@@ -1,13 +1,14 @@
 {% extends "base.html" %}
+{% load static %}
 {% block title %}Projects{% endblock title %}
 
 {% block content %}
 <div class="container p-3">
 
-    <a href="{% url 'new_project' %}" class="btn btn-primary float-end">Add new project</a>
+    <a href="{% url 'new_project' %}" class="btn btn-primary">Add new project</a>
         {% for project in projects %}
             <div class="p-3">
-                <img src="" alt="thumbnail">
+                <img src="{{}}" alt="thumbnail">
                 <div class="p-1">
                     <h3>{{ project.name }}</h3>
                     <p>{{ project.description }}</p>
@@ -17,6 +18,7 @@
                         <h6>In Progress</h6>
                     {% endif %}
                 </div>
+                {% comment %} <a href="{% url 'edit_project' project.id %}" class="btn btn-primary">Edit Project</a> {% endcomment %}
             </div>
         {% endfor %}
 </div>
