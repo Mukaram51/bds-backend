@@ -10,7 +10,8 @@
 
         {% for project in projects %}
             <div class="p-3 ">
-                <img src="{{ project.images.url }}" alt="{{ project.name }}" style="width: 200px; height: 200px;">
+              
+              <img src="{{ project.images.url }}" alt="{{ project.name }}" style="width: 200px; height: 200px; border-radius: 30px;">
                 <div class="p-1">
                     <h3>{{ project.name }}</h3>
                     <p>{{ project.description }}</p>
@@ -19,8 +20,9 @@
                     {% else %}
                         <h6>In Progress</h6>
                     {% endif %}
+                    <br><br>
+                    <a class="btn btn-primary" href="{% url 'project' project.id %}">Learn more...</a>
                 </div>
-                {% comment %} <a href="{% url 'edit_project' project.id %}" class="btn btn-primary">Edit Project</a> {% endcomment %}
             </div>
         {% endfor %}
     </div>

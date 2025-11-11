@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %} {{ project.name}} {% endblock title %}
+{% block content %}
+<div class="container m-3">
+
+    <h2>{{ project.name }}</h2>
+    <hr />
+    <img src="{{ project.images.url }}" alt="{{ project.name }}" style="width: 200px; height: 200px; border-radius: 30px;">
+    {% comment %} <img src="{{ project.images.url }}" alt="{{ project.name }}"> {% endcomment %}
+    <p>{{ project.description }}</p>
+    {% if project.is_completed %}
+    <h6>Completed</h6>
+    {% else %}
+    <h6>In Progress</h6>
+    {% endif %} 
+    {% if user.is_authenticated %}
+    
+    <a href="{% url 'edit_project' project.id %}" class="btn btn-primary">Edit Project</a>
+    {% endif %}
+</div>
+
+{% endblock content %}
