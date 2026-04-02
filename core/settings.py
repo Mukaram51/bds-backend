@@ -28,7 +28,7 @@ if SECRET_KEY is None:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*','127.0.0.1:8000','localhost:8000']
+ALLOWED_HOSTS = ['bds-backend-1zgz.onrender.com','localhost']
 CSRF_COOKIE_SECURE = True
 SESSION_COOKIE_SECURE = True
 SECURE_SSL_REDIRECT = True
